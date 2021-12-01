@@ -1,0 +1,17 @@
+Q1. (i) Find the approximate time your computer takes for a single addition by adding first 106 positive integers using a for loop and dividing the time taken by 106 Similarly find the approximate time taken for a single multiplication and division. Report the result obtained in the form of a table.
+Sol: import time
+
+# starting time
+start = time.time()
+n = input("Enter Number to calculate sum ")
+n = int (n)
+sum = 0
+for num in range(0, n+1, 1):
+    sum = sum+num
+print("SUM of first ", n, "numbers is: ", sum )
+# end time
+end = time.time()
+
+# total time taken
+print(f"Runtime of the program is for addition is {end - start} seconds")
+
