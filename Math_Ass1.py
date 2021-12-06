@@ -1,3 +1,36 @@
+#Q1. (i) Find the approximate time your computer takes for a single addition by adding first 106 positive integers using a for loop and dividing the time taken by 106 Similarly find the approximate time taken for a single multiplication and division. Report the result obtained in the form of a table.
+Sol: 
+#Q1)i: for Addition
+import time
+
+# starting time
+start1 = time.time()
+sum = 0
+for num in range(0,1000001):
+    sum = sum+num
+end1 = time.time()
+time_taken1=(end1 - start1)/1000000
+print(f"Runtime of the program is for addition is in seconds", time_taken1)
+
+div=1
+start2 = time.time()
+for v in range(1, 1000001):
+  div=div/v
+end2=time.time()
+time_taken2=(end2-start2)/1000000
+print("Runtime of the program is for division is ", time_taken2)
+
+
+
+start3 = time.time()
+product = 1
+for n in range(1, 1000001):
+    product = product*n
+end3 = time.time()
+time_taken3=(end3-start3)/1000000
+# total time taken
+print("Runtime of the program is for multiplication is ", time_taken3)
+
 #!/usr/bin/env python
 # coding: utf-8
 
